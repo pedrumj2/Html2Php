@@ -29,8 +29,8 @@ public class HtmlToPhp extends AnAction {
         assert project != null;
         base = project.getBasePath();
         Config _config = new Config("config.txt", base + "/src/resources");
-        source = base + "/" + _config.getValue("source");
-        dest = base + "/" +  _config.getValue("dest");
+        source = base + "/" + _config.getValue("html2php.source");
+        dest = base + "/" +  _config.getValue("html2php.dest");
     }
 
     private PsiFile getSourceFile(){
