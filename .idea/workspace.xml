@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HtmlToPhpAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HtmlToPhpAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pedrumjalali/jetbrains/plugins/HtmlToPhpAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
@@ -32,6 +32,19 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="175">
+                <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -127,6 +140,7 @@
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pedrumjalali/jetbrains/plugins/libs/Convertor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pedrumjalali/jetbrains/plugins/HtmlToPhpAction.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -226,54 +240,6 @@
               <item name="php2html" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php2html" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php2html" type="b2602c69:ProjectViewProjectNode" />
@@ -477,7 +443,7 @@
       <workItem from="1516199600681" duration="45000" />
       <workItem from="1516228916393" duration="2909000" />
       <workItem from="1516284853858" duration="228000" />
-      <workItem from="1516321262435" duration="923000" />
+      <workItem from="1516321262435" duration="1132000" />
     </task>
     <servers />
   </component>
@@ -502,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19963000" />
+    <option name="totallyTimeSpent" value="20172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1773" height="1098" extended-state="6" />
@@ -550,14 +516,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/com/pedrumjalali/jetbrains/plugins/tests/ConvertorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -908,6 +866,17 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="175">
+            <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
