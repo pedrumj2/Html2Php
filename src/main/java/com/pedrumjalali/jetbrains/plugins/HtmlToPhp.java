@@ -21,14 +21,13 @@ public class HtmlToPhp extends AnAction {
     private Project project;
     private String base;
     public HtmlToPhp() throws IOException {
-        super("Text _Boxes");
+        super("_Convertor");
     }
 
     private void init(AnActionEvent __event){
         project = __event.getProject();
-        assert project != null;
         base = project.getBasePath();
-        Config _config = new Config("config.txt", base + "/src/resources");
+        Config _config = new Config("config.txt", base + "/plugins");
         source = base + "/" + _config.getValue("html2php.source");
         dest = base + "/" +  _config.getValue("html2php.dest");
     }
@@ -37,7 +36,6 @@ public class HtmlToPhp extends AnAction {
         VirtualFile _vf =  LocalFileSystem.getInstance().findFileByIoFile(
                 new File( source));
         PsiManager _psiManager = PsiManager.getInstance(project);
-        assert _vf != null;
         PsiFile _psiFile = _psiManager.findFile(_vf);
         return _psiFile;
     }

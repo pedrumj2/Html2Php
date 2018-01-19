@@ -1,12 +1,11 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>com.pedrumjalali.jetbrains.plugins.HtmlToPhp</id>
+  <name>html2php</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Converts include statements for external javascript and css files into
+      include statements for wordpress
     ]]></description>
 
   <change-notes><![CDATA[
@@ -23,16 +22,25 @@
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
   -->
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
   <actions>
-    <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
-      <add-to-group group-id="MainMenu" anchor="last"  />
-      <action id="Myplugin.Textboxes" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhp" text="Text _Boxes" description="A test menu item" />
-      <action id="Myplugin.Dialogs" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhp" text="Show _Dialog" description="A test menu item" />
-    </group>
+    <action id="php2html" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhp" text="_Convert " description="A test menu item">
+      <add-to-group group-id="ToolsMenu"/>
+    </action>
   </actions>
+    <!--<group id="php2html_group" text="_Convert" description="Sample menu">-->
+      <!--<add-to-group group-id="ToolsMenu"/>-->
+      <!--<action id="php2html" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhp" text="_Convert " description="A test menu item" />-->
+    <!--</group>-->
+  <!--</actions>-->
+
+  <!--<application-components>-->
+    <!--&lt;!&ndash; Add your application components here &ndash;&gt;-->
+    <!--<component>-->
+      <!--<implementation-class>com.pedrumjalali.jetbrains.plugins.PluginReg</implementation-class>-->
+    <!--</component>-->
+  <!--</application-components>-->
 
 </idea-plugin>

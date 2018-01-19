@@ -4,13 +4,16 @@ import java.io.BufferedWriter;
 import java.util.List;
 
 public class Convertor {
+    private String prevJs;
     private List<HtmlIncludeStatement> htmlIncludeStatements;
     public Convertor(List<HtmlIncludeStatement> __htmlIncludeStatements){
         htmlIncludeStatements = __htmlIncludeStatements;
+        prevJs = "";
     }
 
     public String convert(){
         StringBuilder _output = new StringBuilder();
+        _output.append("<?php \n");
         for (int i =0 ;i < htmlIncludeStatements.size();i++){
             _output.append(convertElement(htmlIncludeStatements.get(i)));
             _output.append("\n");
@@ -32,8 +35,20 @@ public class Convertor {
         __htmlIncludeStatement.source + "');";
     }
     private String getJavaScriptString(HtmlIncludeStatement __htmlIncludeStatement){
-        return "wp_enqueue_script( '"+__htmlIncludeStatement.name+"', get_template_directory_uri() . '"+
-                __htmlIncludeStatement.source + "', array());";
+        String _output;
+        if (prevJs.equals("")){
+            _output ="wp_enqueue_script( '"+__htmlIncludeStatement.name+"', get_template_directory_uri() . '"+
+                    __htmlIncludeStatement.source + "', array());";
+
+        }
+        else{
+            _output = "wp_enqueue_script( '"+__htmlIncludeStatement.name+"', get_template_directory_uri() . '"+
+                    __htmlIncludeStatement.source + "', array('"+prevJs+"'));";
+
+        }
+        prevJs = __htmlIncludeStatement.name;
+        return _output;
+
     }
 
 }
