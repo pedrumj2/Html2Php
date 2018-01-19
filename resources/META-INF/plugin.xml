@@ -26,7 +26,7 @@
   <depends>com.intellij.modules.platform</depends>
 
   <actions>
-    <action id="php2html" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhp" text="_Convert " description="A test menu item">
+    <action id="php2html" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhpAction" text="_Convert " description="A test menu item">
       <add-to-group group-id="ToolsMenu"/>
     </action>
   </actions>
