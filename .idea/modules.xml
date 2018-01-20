@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Wordpress_Plugin.iml" filepath="$PROJECT_DIR$/Wordpress_Plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../common/common.iml" filepath="$PROJECT_DIR$/../../common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html2php_plugin.iml" filepath="$PROJECT_DIR$/html2php_plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../util/util.iml" filepath="$PROJECT_DIR$/../../../util/util.iml" />
     </modules>
   </component>

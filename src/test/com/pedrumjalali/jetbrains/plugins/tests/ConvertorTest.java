@@ -28,7 +28,7 @@ public class ConvertorTest {
 
     @Test
     public void testConvertor(){
-        String _res = convertor.convert();
+        String _res = convertor.run();
         assertEquals(_res, "wp_enqueue_script( 'path', get_template_directory_uri() . 'temp/path', array());\n" +
                 "wp_enqueue_style( 'path2', get_template_directory_uri() . 'temp/path2');\n");
     }

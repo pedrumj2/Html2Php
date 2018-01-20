@@ -1,0 +1,46 @@
+<idea-plugin>
+  <id>com.pedrumjalali.jetbrains.plugins.HtmlToPhp</id>
+  <name>html2php</name>
+  <version>1.0</version>
+
+  <description><![CDATA[
+      Converts include statements for external javascript and css files into
+      include statements for wordpress
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <actions>
+    <action id="php2html" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhpAction" text="_Convert " description="A test menu item">
+      <add-to-group group-id="ToolsMenu"/>
+    </action>
+  </actions>
+    <!--<group id="php2html_group" text="_Convert" description="Sample menu">-->
+      <!--<add-to-group group-id="ToolsMenu"/>-->
+      <!--<action id="php2html" class="com.pedrumjalali.jetbrains.plugins.HtmlToPhp" text="_Convert " description="A test menu item" />-->
+    <!--</group>-->
+  <!--</actions>-->
+
+  <!--<application-components>-->
+    <!--&lt;!&ndash; Add your application components here &ndash;&gt;-->
+    <!--<component>-->
+      <!--<implementation-class>com.pedrumjalali.jetbrains.plugins.PluginReg</implementation-class>-->
+    <!--</component>-->
+  <!--</application-components>-->
+
+</idea-plugin>
