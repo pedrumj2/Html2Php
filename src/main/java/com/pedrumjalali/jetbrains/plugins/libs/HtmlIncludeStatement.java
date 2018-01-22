@@ -18,10 +18,10 @@ public class HtmlIncludeStatement {
     private HtmlTagImpl htmlTagImpl;
     public XmlAttribute[] xmlAttributes;
     public String name;
-    public HtmlIncludeStatement(HtmlTagImpl __htmlTagIml){
+    public HtmlIncludeStatement(HtmlTagImpl __htmlTagIml, String __extraPath){
         htmlTagImpl = __htmlTagIml;
         type = getType(htmlTagImpl);
-        source = getSource(htmlTagImpl, type);
+        source = getSource(htmlTagImpl, type, __extraPath);
         name = getName(source);
     }
 
@@ -36,7 +36,7 @@ public class HtmlIncludeStatement {
         return p.getFileName().toString();
     }
 
-    private String getSource(HtmlTagImpl __htmlTag, Type __type){
+    private String getSource(HtmlTagImpl __htmlTag, Type __type, String __extraPath){
         String _output;
         if (__type == Type.JAVASCRIPT){
             _output = getSourceJavascript(__htmlTag);
@@ -44,7 +44,7 @@ public class HtmlIncludeStatement {
         else{
             _output = getSourceCss(__htmlTag);
         }
-        _output = "/" + _output;
+        _output = "/" +__extraPath + "/" + _output;
         return _output;
     }
 

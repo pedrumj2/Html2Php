@@ -10,12 +10,15 @@ import java.util.List;
 public class Visitor extends PsiRecursiveElementVisitor {
     public List<HtmlTagImpl> psiElements = new ArrayList<HtmlTagImpl>();
     public List<HtmlIncludeStatement> extSourceStatements = new ArrayList<>();
-
+    private String extraPath;
+    public Visitor(String __extraPath){
+        extraPath = __extraPath;
+    }
     @Override
     public void visitElement(PsiElement element) {
         if (isHtmlIncludeElement(element)){
             HtmlTagImpl _htmlTagIml =  (HtmlTagImpl)element;
-            HtmlIncludeStatement _extSourceStatement = new HtmlIncludeStatement(_htmlTagIml);
+            HtmlIncludeStatement _extSourceStatement = new HtmlIncludeStatement(_htmlTagIml, extraPath);
             extSourceStatements.add(_extSourceStatement);
         }
         super.visitElement(element);

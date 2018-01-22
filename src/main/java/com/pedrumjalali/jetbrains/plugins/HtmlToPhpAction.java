@@ -30,9 +30,9 @@ public class HtmlToPhpAction extends AnAction {
         assert project != null;
         String base = project.getBasePath();
         Config _config = new Config("config.txt", base + "/plugins");
-        extraPath = "/" + _config.getValue("html2php.extra") +"/";
-        source = base + extraPath +  _config.getValue("html2php.source");
-        dest = base + extraPath +  _config.getValue("html2php.dest");
+        extraPath = _config.getValue("html2php.extra");
+        source = base + "/" +  _config.getValue("html2php.source");
+        dest = base + "/" +  _config.getValue("html2php.dest");
     }
 
     private PsiFile getSourceFile(){
@@ -45,7 +45,7 @@ public class HtmlToPhpAction extends AnAction {
     public void actionPerformed(AnActionEvent __event) {
         init(__event);
         PsiFile _psiFile= getSourceFile();
-        Visitor _visitor = new Visitor();
+        Visitor _visitor = new Visitor(extraPath);
         _psiFile.accept(_visitor);
         Convertor _convertor = new Convertor(_visitor.extSourceStatements);
         Writer _writer = new Writer(dest);
