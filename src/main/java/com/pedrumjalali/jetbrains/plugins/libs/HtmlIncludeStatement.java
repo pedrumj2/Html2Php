@@ -37,12 +37,15 @@ public class HtmlIncludeStatement {
     }
 
     private String getSource(HtmlTagImpl __htmlTag, Type __type){
+        String _output;
         if (__type == Type.JAVASCRIPT){
-            return getSourceJavascript(__htmlTag);
+            _output = getSourceJavascript(__htmlTag);
         }
         else{
-            return getSourceCss(__htmlTag);
+            _output = getSourceCss(__htmlTag);
         }
+        _output = "/" + _output;
+        return _output;
     }
 
     private String getSourceJavascript(HtmlTagImpl __htmlTagImpl){
